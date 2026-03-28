@@ -1,5 +1,5 @@
 """
-datagrid — Auth0 M2M Token Manager
+clingrid — Auth0 M2M Token Manager
 
 Each agent requests a scoped M2M token before executing.
 Token is cached until expiry (Auth0 M2M tokens are 24h by default).

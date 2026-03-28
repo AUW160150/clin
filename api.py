@@ -1,5 +1,5 @@
 """
-datagrid v2 — FastAPI Backend
+clingrid v2 — FastAPI Backend
 Sponsor track: HydraDB · Auth0 · Photon · Dify · GMI Cloud
 """
 
@@ -19,9 +19,9 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 from db.hydradb_client import get_or_create as hydra_get_or_create
 from workflow.dify_client import DifyClient
-from auth.m2m import verify_scope   # re-used from original datagrid auth module
+from auth.m2m import verify_scope   # re-used from original clingrid auth module
 
-app = FastAPI(title="datagrid API v2", version="2.0.0")
+app = FastAPI(title="clingrid API v2", version="2.0.0")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],

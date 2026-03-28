@@ -1,4 +1,4 @@
-# datagrid v2 — Sponsor Track Dependencies
+# clingrid v2 — Sponsor Track Dependencies
 
 # ── Web framework ─────────────────────────────────────────────────────────────
 fastapi>=0.115.0

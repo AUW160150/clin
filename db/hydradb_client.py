@@ -18,7 +18,7 @@ _fallback_store: dict[str, dict] = {}
 
 class HydraDBClient:
     """
-    Wraps the HydraDB Python SDK for datagrid pipeline runs.
+    Wraps the HydraDB Python SDK for clingrid pipeline runs.
 
     Lifecycle per run:
       1. create_run_tenant(run_id)  → isolated namespace

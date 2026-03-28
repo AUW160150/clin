@@ -1,4 +1,4 @@
-# Dify Workflow Setup — datagrid clinical-harmonization
+# Dify Workflow Setup — clingrid clinical-harmonization
 
 This document describes how to build the Dify workflow that the `DifyClient`
 calls via `POST https://api.dify.ai/v1/workflows/run`.
@@ -6,7 +6,7 @@ calls via `POST https://api.dify.ai/v1/workflows/run`.
 ---
 
 ## Workflow name
-`datagrid-clinical-harmonization`
+`clingrid-clinical-harmonization`
 
 ## Your API key
 `app-EvEgLFOwr3XYAZRNLBSTm3Va`
@@ -159,6 +159,6 @@ curl -X POST https://api.dify.ai/v1/workflows/run \
       "pipeline_mode": "full"
     },
     "response_mode": "streaming",
-    "user": "datagrid-test"
+    "user": "clingrid-test"
   }'
 ```

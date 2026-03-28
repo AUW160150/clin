@@ -11,7 +11,7 @@ This module:
 DIFY WORKFLOW SETUP (build this once in the Dify UI at https://udify.app)
 ─────────────────────────────────────────────────────────────────────────────
 
-Workflow name: datagrid-clinical-harmonization
+Workflow name: clingrid-clinical-harmonization
 
 Input variables (Start node):
   hospital        Short Text   "Hospital name, e.g. SSKM Kolkata"
@@ -91,7 +91,7 @@ class DifyWorkflowEvent:
 
 class DifyClient:
     """
-    Calls the datagrid Dify workflow and streams node events back
+    Calls the clingrid Dify workflow and streams node events back
     to the FastAPI backend for real-time frontend display.
     """
 
@@ -110,7 +110,7 @@ class DifyClient:
         clinical_data: str  = "",
         lab_data:      str  = "",
         pipeline_mode: str  = "full",
-        user_id:       str  = "datagrid-pipeline",
+        user_id:       str  = "clingrid-pipeline",
     ) -> Generator[DifyWorkflowEvent, None, None]:
         """
         Yield DifyWorkflowEvent objects as the workflow progresses.

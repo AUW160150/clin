@@ -1,5 +1,5 @@
 """
-Photon Skills — agent capability definitions for the datagrid pipeline.
+Photon Skills — agent capability definitions for the clingrid pipeline.
 
 Each pipeline agent exposes its capability as a Photon-compatible skill.
 Skills define: what data the agent accepts, what it produces, and how
@@ -75,7 +75,7 @@ def list_skills() -> list[dict]:
     return [s.to_dict() for s in _REGISTRY.values()]
 
 
-# ── datagrid skill definitions ────────────────────────────────────────────────
+# ── clingrid skill definitions ────────────────────────────────────────────────
 
 INGEST_CLINICAL_SKILL = Skill(
     name        = "ingest_clinical",
@@ -209,7 +209,7 @@ def notify_hospital_completion(
     Requires PHOTON_API_KEY to be set. In dev mode, logs the message only.
     """
     message = (
-        f"✅ datagrid | {hospital_name}\n"
+        f"✅ clingrid | {hospital_name}\n"
         f"Your dataset is ready for marketplace listing.\n\n"
         f"  Patients:   {patients}\n"
         f"  Entities:   {entities} mapped\n"
@@ -217,7 +217,7 @@ def notify_hospital_completion(
         f"  OMOP score: {omop_quality:.1%}\n"
         f"  Dataset ID: {dataset_id}\n\n"
         f"Your estimated earnings: $4,800–$6,200/year\n"
-        f"View at datagrid.health/datasets/{dataset_id}"
+        f"View at clingrid.health/datasets/{dataset_id}"
     )
 
     if not PHOTON_API_KEY:

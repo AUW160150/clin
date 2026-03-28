@@ -1,4 +1,4 @@
-# datagrid
+# clingrid
 
 **Connecting LMIC hospitals to pharmaceutical research buyers.**
 
@@ -8,7 +8,7 @@ Hospitals upload raw clinical records in Bengali, Hindi, or English. A 5-agent A
 
 ## The Problem
 
-South Asian populations are massively underrepresented in clinical research. LMIC hospitals hold valuable patient data but have no infrastructure to standardize, package, or monetize it. Pharma buyers can't access it at scale. datagrid closes this gap.
+South Asian populations are massively underrepresented in clinical research. LMIC hospitals hold valuable patient data but have no infrastructure to standardize, package, or monetize it. Pharma buyers can't access it at scale. clingrid closes this gap.
 
 ---
 
@@ -64,7 +64,7 @@ Pharma Marketplace — OMOP Parquet datasets, queryable provenance
 ## Project Structure
 
 ```
-datagrid/
+clingrid/
 ├── api.py                          # FastAPI backend
 ├── agents/
 │   ├── harmonization_agent.py      # GMI Cloud Kimi K2.5 — ICD-10/OMOP mapping
@@ -187,4 +187,4 @@ See [`workflow/DIFY_SETUP.md`](workflow/DIFY_SETUP.md) for the complete guide to
 
 ---
 
-*Built for the datagrid hackathon sponsor track — GMI Cloud · Dify · HydraDB · Photon*
+*Built for the clingrid hackathon sponsor track — GMI Cloud · Dify · HydraDB · Photon*
